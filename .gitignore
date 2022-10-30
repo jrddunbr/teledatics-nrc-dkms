@@ -3,3 +3,4 @@
 pkg
 src
 teledatics-nrc-dkms
+*.pkg.tar.*
