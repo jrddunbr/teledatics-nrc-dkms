@@ -17,7 +17,7 @@ prepare() {
 package() {
   # Copy all dkms source code
   mkdir -p "${pkgdir}/usr/src/${pkgname}-${pkgver}"
-  cp "${srcdir}/${pkgname}/src/" "${pkgdir}/usr/src/${pkgname}-${pkgver}" -r
+  cp "${srcdir}/${pkgname}/src/." "${pkgdir}/usr/src/${pkgname}-${pkgver}/" -r
 
   # Install dkms config
   install -Dm644 "${srcdir}/dkms.conf" "${pkgdir}/usr/src/${pkgname}-${pkgver}/dkms.conf"
