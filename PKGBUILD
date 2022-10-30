@@ -8,7 +8,7 @@ url=""
 license=('BSD', 'GPL2', 'MIT')
 depends=('teledatics-spi-ft232h-dkms')
 source=("${srcdir}/${pkgname}::git+https://github.com/teledatics/nrc-dkms#commit=fdbca06d91aa1ddde594ea5271a8d665c445b5c3" "dkms.conf" "nrc_gpiono.sh")
-sha256sums=('SKIP' '74ea4be45814a1f6464074fb71c60c86d465d7eb5fbc397d92c7cd64fbfd0b46' '5e0d446bb4768848c20f2d6dcda3c5abcb97a7c8c900ad02800e2f8f678ee922')
+sha256sums=('SKIP' '381a2927423b5a98f82e190bcd36f6af2cb7071f6ed80c719362596228be599e' '5e0d446bb4768848c20f2d6dcda3c5abcb97a7c8c900ad02800e2f8f678ee922')
 
 prepare() {
     sed -i 's/nrc/teledatics-nrc/' "${srcdir}/${pkgname}/misc/nrc.conf"
